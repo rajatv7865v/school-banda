@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Facilities() {
   const facilities = [
@@ -166,10 +167,11 @@ export default function Facilities() {
                   className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100"
                 >
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={facility.image}
                       alt={facility.title}
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      fill
+                      className="object-cover hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     <div className="absolute top-4 right-4 text-4xl bg-white/20 backdrop-blur-sm rounded-full w-16 h-16 flex items-center justify-center">

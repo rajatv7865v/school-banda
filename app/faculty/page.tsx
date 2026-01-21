@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Faculty() {
   const [selectedStaff, setSelectedStaff] = useState<number | null>(null);
@@ -219,10 +220,11 @@ export default function Faculty() {
                 {dept.faculty.map((member) => (
                   <div key={member.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
                     <div className="relative h-64 overflow-hidden">
-                      <img
+                      <Image
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     </div>

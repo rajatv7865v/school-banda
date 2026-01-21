@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -238,10 +239,11 @@ export default function Gallery() {
                     onClick={() => setSelectedImage(item.id)}
                   >
                     <div className="aspect-square overflow-hidden relative">
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                       <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform">
@@ -281,12 +283,16 @@ export default function Gallery() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <img
-              src={selectedItem.image}
-              alt={selectedItem.title}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
-              onClick={(e) => e.stopPropagation()}
-            />
+            <div className="relative w-full max-h-[90vh] aspect-auto">
+              <Image
+                src={selectedItem.image}
+                alt={selectedItem.title}
+                width={1200}
+                height={800}
+                className="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
               <h3 className="text-white text-2xl font-bold mb-2">{selectedItem.title}</h3>
               <p className="text-white/80 capitalize">{selectedItem.category}</p>

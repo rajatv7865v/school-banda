@@ -110,7 +110,7 @@ export default function AboutAcademics() {
                 Our curriculum is carefully crafted to balance academic rigor with
                 practical application, ensuring that students understand concepts
                 deeply and can apply their knowledge in real-world situations. We
-                emphasize holistic development, nurturing students' intellectual,
+                emphasize holistic development, nurturing students&apos; intellectual,
                 social, emotional, and ethical growth.
               </p>
             </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   const teamMembers = [
@@ -296,10 +297,11 @@ export default function About() {
                   className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
                 >
                   <div className="relative h-64 overflow-hidden">
-                    <img
+                    <Image
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      fill
+                      className="object-cover hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
