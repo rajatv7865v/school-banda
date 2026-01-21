@@ -1,9 +1,11 @@
-/** @type {import('vite').UserConfig} */
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
   server: {
-    allowedHosts: true, // Allow all hosts
+    allowedHosts: true,
   },
   preview: {
-    allowedHosts: true, // Allow all hosts including sgmssic.com
+    allowedHosts: ['sgmssic.com', 'www.sgmssic.com', 'localhost', '127.0.0.1', '.sgmssic.com'],
+    host: true,
   },
-};
+});
