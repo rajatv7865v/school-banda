@@ -11,7 +11,7 @@ export default function Carousel() {
       title: 'Shree Gayatri Mahashakti',
       subtitle: 'Sikhshan Sanshthan Inter College',
       description: 'We Create Leaders',
-      image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&h=1080&fit=crop&auto=format',
+      image: '/images/school.jpeg',
       overlayClass: 'bg-gradient-to-br from-blue-900/70 via-blue-800/70 to-indigo-900/70',
       links: [
         { href: '/about', label: 'More About Us' },
@@ -24,7 +24,7 @@ export default function Carousel() {
       title: 'Excellence in Education',
       subtitle: 'Building Tomorrow Today',
       description: 'Shaping Future Leaders Through Quality Education',
-      image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1920&h=1080&fit=crop&auto=format',
+      image: '/images/school2.jpeg',
       overlayClass: 'bg-gradient-to-br from-indigo-900/70 via-purple-800/70 to-pink-900/70',
       links: [
         { href: '/admissions', label: 'Admission Procedure' },
@@ -37,8 +37,8 @@ export default function Carousel() {
       title: 'Quality Learning',
       subtitle: 'Innovative Teaching',
       description: 'Empowering Students to Achieve Their Full Potential',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop&auto=format',
-      overlayClass: 'bg-gradient-to-br from-green-900/70 via-teal-800/70 to-cyan-900/70',
+      image: '/images/school3.jpeg',
+      overlayClass: 'bg-blue-900/50',
       links: [
         { href: '/academics', label: 'Courses' },
         { href: '/gallery', label: 'Campus Tour' },
