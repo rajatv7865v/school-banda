@@ -1,9 +1,9 @@
 /** @type {import('vite').UserConfig} */
 export default {
   server: {
-    allowedHosts: ['sgmssic.com'],
+    allowedHosts: true, // Allow all hosts
   },
   preview: {
-    allowedHosts: ['sgmssic.com'],
+    allowedHosts: true, // Allow all hosts including sgmssic.com
   },
 };
