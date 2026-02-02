@@ -25,7 +25,7 @@ export default function About() {
       qualification: "M.A., M.Ed.",
       experience: "15+ Years",
       description: "Shaping curriculum and learning",
-      image: "/images/team/Saroj_kumar_verma.jpeg",
+      image: "/images/team/saroj_kumar_verma.jpeg",
     },
     {
       name: "Joga Singh",
