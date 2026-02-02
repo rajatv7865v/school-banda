@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -9,7 +10,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College</h3>
+            <Image src="/logo/logo.jpeg" alt="logo" width={140} height={100}  className='rounded-full'/>
+            <h3 className="text-xl font-bold mb-4 pt-2">Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College</h3>
             <p className="text-gray-400 text-sm mb-4">
               Committed to providing quality education and nurturing future leaders through innovative teaching methods.
             </p>

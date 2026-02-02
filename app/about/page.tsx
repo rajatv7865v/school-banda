@@ -4,36 +4,36 @@ import Image from "next/image";
 export default function About() {
   const teamMembers = [
     {
-      name: "Principal",
-      role: "Principal",
+      name: "Shri Shyamlal Mishra",
+      role: "Founder",
       qualification: "M.A., M.Ed., Ph.D.",
       experience: "20+ Years",
       description: "Leading with vision and dedication",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&auto=format",
+      image: "/images/team/shyamlal_mishra.jpeg",
     },
     {
-      name: "Vice Principal",
-      role: "Vice Principal",
+      name: "Brajesh Chandra Mishra",
+      role: "Managing Director",
       qualification: "M.Sc., M.Ed.",
       experience: "18+ Years",
       description: "Fostering academic excellence",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&auto=format",
+      image: "/images/team/Brijesh_chandra.jpeg",
     },
     {
-      name: "Head of Academics",
-      role: "Head of Academics",
+      name: "Saroj Kumar Verma",
+      role: "Principal",
       qualification: "M.A., M.Ed.",
       experience: "15+ Years",
       description: "Shaping curriculum and learning",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format",
+      image: "/images/team/Saroj_kumar_verma.jpeg",
     },
     {
-      name: "Administrative Head",
-      role: "Administrative Head",
+      name: "Joga Singh",
+      role: "Manager",
       qualification: "M.Com., MBA",
       experience: "12+ Years",
       description: "Ensuring smooth operations",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&auto=format",
+      image: "/images/team/joga_singh.jpeg",
     },
   ];
 
@@ -290,35 +290,28 @@ export default function About() {
             </p>
           </div>
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                  className="group bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl hover:border-primary-200 transition-all duration-300"
                 >
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover hover:scale-110 transition-transform duration-300"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 text-gray-800">
+                  <div className="p-5 lg:p-6 text-center">
+                    <h3 className="text-lg font-bold text-gray-800 mb-1">
                       {member.name}
                     </h3>
-                    <p className="text-primary-600 font-semibold mb-2">
+                    <p className="text-primary-600 font-semibold text-sm">
                       {member.role}
                     </p>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {member.qualification}
-                    </p>
-                    <p className="text-sm text-gray-500 mb-3">
-                      {member.experience} Experience
-                    </p>
-                    <p className="text-sm text-gray-700">{member.description}</p>
                   </div>
                 </div>
               ))}
@@ -326,7 +319,7 @@ export default function About() {
             <div className="text-center mt-12">
               <Link
                 href="/faculty"
-                className="inline-block bg-primary-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors"
+                className="inline-flex items-center gap-2 bg-primary-600 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-primary-700 shadow-md hover:shadow-lg transition-all duration-200"
               >
                 View All Faculty Members
               </Link>

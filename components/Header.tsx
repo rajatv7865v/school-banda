@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -169,8 +170,8 @@ export default function Header() {
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">SGMS</span>
+              <div className="w-20 h-18 bg-primary-600 rounded-full flex items-center justify-center">
+          <Image src="/logo/logo.jpeg" alt="logo" width={140} height={100} className='rounded-full'/>
               </div>
               
             </Link>
