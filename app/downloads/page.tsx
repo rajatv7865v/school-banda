@@ -392,7 +392,7 @@ export default function Downloads() {
                   Contact Us
                 </a>
                 <a
-                  href="mailto:info@sgmssic.edu"
+                  href="mailto:Sgmssic2012@gmail.com"
                   className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors inline-flex items-center gap-2"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

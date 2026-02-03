@@ -45,25 +45,25 @@ export default function Contact() {
     },
     {
       title: 'Phone',
-      content: '+91 555-123-4567',
+      content: '+91 7897156698',
       secondary: 'Main Office',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
       ),
-      link: 'tel:+915551234567',
+      link: 'tel:+917897156698',
     },
     {
       title: 'Email',
-      content: 'info@sgmssic.edu',
+      content: 'Sgmssic2012@gmail.com',
       secondary: 'General Inquiry',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      link: 'mailto:info@sgmssic.edu',
+      link: 'mailto:Sgmssic2012@gmail.com',
     },
     {
       title: 'Office Hours',
@@ -284,12 +284,11 @@ export default function Contact() {
                         <svg className="w-5 h-5 mr-2 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        Email Addresses
+                        Contact
                       </h3>
                       <div className="text-gray-700 space-y-1">
-                        <p>General: <a href="mailto:info@sgmssic.edu" className="text-primary-600 hover:underline">info@sgmssic.edu</a></p>
-                        <p>Admissions: <a href="mailto:admissions@sgmssic.edu" className="text-primary-600 hover:underline">admissions@sgmssic.edu</a></p>
-                        <p>Support: <a href="mailto:support@sgmssic.edu" className="text-primary-600 hover:underline">support@sgmssic.edu</a></p>
+                        <p>Email: <a href="mailto:Sgmssic2012@gmail.com" className="text-primary-600 hover:underline">Sgmssic2012@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+917897156698" className="text-primary-600 hover:underline">+91 7897156698</a></p>
                       </div>
                     </div>
                   </div>
