@@ -7,7 +7,7 @@ export default function Facilities() {
       title: 'Modern Laboratories',
       description: 'Well-equipped science laboratories (Physics, Chemistry, Biology) with all instruments as per CBSE norms. All setups are always in working order to ease the experimental practice of students.',
       icon: '🔬',
-      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1602052577122-f73b9710adba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFifGVufDB8fDB8fHww',
       features: ['Physics Lab', 'Chemistry Lab', 'Biology Lab', 'Computer Lab'],
     },
     {
@@ -21,7 +21,7 @@ export default function Facilities() {
       title: 'Smart Classrooms',
       description: 'Fully equipped smart classrooms with modern technology including projectors, interactive whiteboards, and audio-visual systems to enhance the learning experience.',
       icon: '💻',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1719159381962-4170890ada4e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnQlMjBjbGFzc3Jvb218ZW58MHx8MHx8fDA%3D',
       features: ['Interactive Boards', 'Audio-Visual Systems', 'Internet Connectivity', 'Comfortable Seating'],
     },
     {
@@ -66,13 +66,7 @@ export default function Facilities() {
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&auto=format',
       features: ['Art Supplies', 'Musical Instruments', 'Creative Spaces', 'Expert Guidance'],
     },
-    {
-      title: 'Hostel Facilities',
-      description: 'Safe and comfortable hostel accommodation for students with all essential amenities. Separate hostels for boys and girls with proper security and care.',
-      icon: '🏠',
-      image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=600&fit=crop&auto=format',
-      features: ['Comfortable Rooms', 'Dining Facilities', '24/7 Security', 'Warden Support'],
-    },
+    
     {
       title: 'Medical Room',
       description: 'Well-equipped medical room with first aid facilities and a qualified nurse available during school hours to attend to any medical needs of students.',
@@ -135,7 +129,7 @@ export default function Facilities() {
             </h2>
             <div className="w-24 h-1 bg-primary-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              At Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College, we believe that 
+              At Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College, we believe that 
               excellent infrastructure is essential for quality education. Our campus is 
               equipped with modern facilities that create an ideal learning environment 
               and support the holistic development of our students.
@@ -217,12 +211,12 @@ export default function Facilities() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
                 { number: '50+', label: 'Classrooms', icon: '🏫' },
-                { number: '10+', label: 'Laboratories', icon: '🔬' },
+                { number: '8+', label: 'Laboratories', icon: '🔬' },
                 { number: '5+', label: 'Computer Labs', icon: '💻' },
-                { number: '1', label: 'Large Library', icon: '📚' },
+                { number: '2', label: 'Large Library', icon: '📚' },
                 { number: '1', label: 'Auditorium', icon: '🎭' },
                 { number: '2+', label: 'Playgrounds', icon: '⚽' },
-                { number: '1', label: 'Sports Complex', icon: '🏋️' },
+                { number: '100%', label: 'CCTV Coverage', icon: '👁️‍🗨️' },
                 { number: '100%', label: 'Wi-Fi Coverage', icon: '📡' },
               ].map((stat, index) => (
                 <div

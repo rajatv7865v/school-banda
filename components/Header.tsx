@@ -19,9 +19,8 @@ export default function Header() {
       submenu: [
         { href: "/admissions", label: "Admission Procedure" },
         { href: "/academics", label: "Academic Information" },
-        { href: "/academics", label: "Courses" },
-        { href: "/admissions", label: "Online Registration" },
-        { href: "/admissions", label: "Fee Details" },
+        { href: "/courses", label: "Courses" },
+        { href: "/courses", label: "Rules & Regulations" },
       ],
     },
     {

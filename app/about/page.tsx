@@ -38,10 +38,14 @@ export default function About() {
   ];
 
   const statistics = [
-    { number: "2000+", label: "Students", icon: "👨‍🎓" },
-    { number: "200+", label: "Faculty Members", icon: "👨‍🏫" },
-    { number: "50+", label: "Years of Excellence", icon: "🏆" },
+    { number: "1500+", label: "Active Students", icon: "👨‍🎓" },
+    { number: "60+", label: "Faculty Members", icon: "👨‍🏫" },
+    { number: "35+", label: "Years of Excellence", icon: "🏆" },
     { number: "10000+", label: "Alumni", icon: "🎓" },
+    { number: "99%", label: "Passing Ratio", icon: "✅" },
+    { number: "4+", label: "Labs", icon: "🔬" },
+    { number: "2+", label: "Playgrounds", icon: "🛝" },
+    { number: "50+", label: "Activities", icon: "🎲" },
   ];
 
   const whyChooseUs = [
@@ -88,23 +92,24 @@ export default function About() {
       {/* Banner/Hero Section with Image */}
       <section className="relative h-[60vh] min-h-[500px] max-h-[700px] overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{
+            // rotate: "-45deg",
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop&auto=format)",
+              "url('/images/about-us.jpeg')",
           }}
         >
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80" />
-        
+
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="container mx-auto px-4 text-center text-white">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 drop-shadow-2xl">
               About Our Institution
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl mb-4 text-white/95 max-w-3xl mx-auto">
-              Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College
+              Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College
             </p>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
               Excellence in Education Since Our Foundation
@@ -125,7 +130,7 @@ export default function About() {
             </div>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College is a
+                Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College is a
                 premier educational institution committed to providing quality
                 education and holistic development to students. Established with
                 a vision to create leaders of tomorrow, we have been at the

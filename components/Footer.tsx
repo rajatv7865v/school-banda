@@ -11,7 +11,7 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <Image src="/logo/logo.jpeg" alt="logo" width={140} height={100}  className='rounded-full'/>
-            <h3 className="text-xl font-bold mb-4 pt-2">Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College</h3>
+            <h3 className="text-xl font-bold mb-4 pt-2">Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College</h3>
             <p className="text-gray-400 text-sm mb-4">
               Committed to providing quality education and nurturing future leaders through innovative teaching methods.
             </p>
@@ -151,7 +151,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College. All rights reserved.</p>
+          <p>&copy; {currentYear} Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -54,21 +54,22 @@ export default function Contact() {
       ),
       link: 'tel:+917897156698',
     },
+   
     {
       title: 'Email',
-      content: 'Sgmssic2012@gmail.com',
-      secondary: 'General Inquiry',
+      content: 'info@sgmssic.com',
+      secondary: 'Official Mail',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      link: 'mailto:Sgmssic2012@gmail.com',
+      link: 'mailto:info@sgmssic.com',
     },
     {
       title: 'Office Hours',
-      content: 'Monday - Friday: 8:00 AM - 5:00 PM',
-      secondary: 'Saturday: 9:00 AM - 1:00 PM',
+      content: 'Monday - Saturday: 8:00 AM - 2:00 PM',
+      secondary: '',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -92,7 +93,7 @@ export default function Contact() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80" />
-        
+
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="container mx-auto px-4 text-center text-white">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 drop-shadow-2xl">
@@ -123,9 +124,8 @@ export default function Contact() {
               {contactCards.map((card, index) => (
                 <div
                   key={index}
-                  className={`bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100 ${
-                    card.link ? 'cursor-pointer' : ''
-                  }`}
+                  className={`bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100 ${card.link ? 'cursor-pointer' : ''
+                    }`}
                   onClick={() => card.link && (window.location.href = card.link)}
                 >
                   <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-4 text-primary-600">
@@ -274,8 +274,7 @@ export default function Contact() {
                         Office Hours
                       </h3>
                       <div className="text-gray-700 space-y-1">
-                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                        <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        <p>Monday - Saturday: 8:00 AM - 2:00 PM</p>
                         <p>Sunday: Closed</p>
                       </div>
                     </div>
@@ -287,7 +286,8 @@ export default function Contact() {
                         Contact
                       </h3>
                       <div className="text-gray-700 space-y-1">
-                        <p>Email: <a href="mailto:Sgmssic2012@gmail.com" className="text-primary-600 hover:underline">Sgmssic2012@gmail.com</a></p>
+                        <p>Official Email: <a href="mailto:Sgmssic2012@gmail.com" className="text-primary-600 hover:underline">Sgmssic2012@gmail.com</a></p>
+                        <p>Support Email: <a href="mailto:info@sgmssic.com" className="text-primary-600 hover:underline">info@sgmssic.com</a></p>
                         <p>Phone: <a href="tel:+917897156698" className="text-primary-600 hover:underline">+91 7897156698</a></p>
                       </div>
                     </div>
@@ -302,10 +302,9 @@ export default function Contact() {
                   </p>
                   <div className="flex space-x-4">
                     {[
-                      { name: 'Facebook', icon: 'f', href: '#' },
-                      { name: 'Twitter', icon: 't', href: '#' },
-                      { name: 'Instagram', icon: '📷', href: '#' },
-                      { name: 'LinkedIn', icon: 'in', href: '#' },
+                      { name: 'Facebook', icon: 'f', href: 'https://www.facebook.com/share/1QKbw8W3hS/' },
+                      { name: 'Instagram', icon: '📷', href: 'https://www.instagram.com/sgmssic_' },
+                      { name: 'Youtube', icon: 'Y', href: 'https://youtube.com/@sgmssic?si=QeEqY3sg1FDJVPiO' },
                     ].map((social, index) => (
                       <a
                         key={index}
@@ -347,7 +346,7 @@ export default function Contact() {
                   Shahjahanpur, Uttar Pradesh, India
                 </p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Gayatri+Nagar,+Near+Power+House+Banda,+Shahjahanpur,+Uttar+Pradesh"
+                  href="https://maps.app.goo.gl/yW8DdvPmC1No3cLq9?g_st=aw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors mt-4"

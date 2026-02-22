@@ -8,7 +8,7 @@ export default function Carousel() {
 
   const slides = [
     {
-      title: 'Shree Gayatri Mahashakti',
+      title: 'Shri Gayatri Mahashakti',
       subtitle: 'Sikhshan Sanshthan Inter College',
       description: 'We Create Leaders',
       image: '/images/school.jpeg',

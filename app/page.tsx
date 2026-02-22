@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Carousel from '@/components/Carousel';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Welcome to Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College
+              Welcome to Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               We are committed to providing quality education and nurturing future leaders through innovative 
@@ -98,11 +99,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-5xl md:text-6xl font-bold mb-2">200+</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2">60+</div>
               <div className="text-xl">Expert Faculty</div>
             </div>
             <div>
-              <div className="text-5xl md:text-6xl font-bold mb-2">2000+</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2">1500+</div>
               <div className="text-xl">Active Students</div>
             </div>
             <div>
@@ -142,34 +143,69 @@ export default function Home() {
       </section>
 
       {/* Gallery */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Photo Gallery</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-              <Link
-                key={item}
-                href="/gallery"
-                className="aspect-square bg-gray-300 rounded-lg overflow-hidden hover:opacity-80 transition-opacity"
-              >
-                <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-                  <svg className="w-12 h-12 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </Link>
-            ))}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+  <div className="container mx-auto px-4">
+
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+        Our <span className="text-primary-600">Photo Gallery</span>
+      </h2>
+      <div className="w-24 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
+      <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+        Explore moments captured from our recent events and activities.
+      </p>
+    </div>
+
+    {/* Gallery Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {[
+        '/images/gallery/1.jpeg','/images/gallery/21.jpeg','/images/gallery/3.jpeg',
+        '/images/gallery/4.jpeg','/images/gallery/5.jpeg',
+        '/images/gallery/7.jpeg','/images/gallery/8.jpeg','/images/gallery/9.jpeg',
+        '/images/gallery/10.jpeg','/images/gallery/11.jpeg','/images/gallery/12.jpeg',
+        ,'/images/gallery/14.jpeg','/images/gallery/15.jpeg',
+        '/images/gallery/16.jpeg','/images/gallery/17.jpeg','/images/gallery/18.jpeg',
+      ].map((item, index) => (
+        <Link
+          key={item}
+          href="/gallery"
+          className="group relative overflow-hidden rounded-2xl shadow-lg"
+        >
+          {/* Image */}
+          <Image
+            src={item ||""}
+            alt={`Gallery ${index}`}
+            width={400}
+            height={300}
+            className="w-full h-60 object-cover transform group-hover:scale-110 transition duration-500 ease-in-out"
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"></div>
+
+          {/* Hover Text */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+            <span className="text-white text-lg font-semibold tracking-wide">
+             Event Images
+            </span>
           </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/gallery"
-              className="inline-block bg-primary-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors"
-            >
-              View All Photos
-            </Link>
-          </div>
-        </div>
-      </section>
+        </Link>
+      ))}
+    </div>
+
+    {/* Button */}
+    <div className="text-center mt-14">
+      <Link
+        href="/gallery"
+        className="inline-block px-10 py-3 rounded-full bg-primary-600 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition duration-300"
+      >
+        View All Photos →
+      </Link>
+    </div>
+
+  </div>
+</section>
 
       {/* Services */}
       <section className="py-16 bg-white">
@@ -191,8 +227,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">IELTS</h3>
-              <p className="text-gray-600">Professional IELTS preparation and testing</p>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">Yoga Classes</h3>
+              <p className="text-gray-600">Professional Yoga Classes</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -212,7 +248,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Begin Your Journey?</h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Join Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College and unlock your potential today.
+            Join Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College and unlock your potential today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

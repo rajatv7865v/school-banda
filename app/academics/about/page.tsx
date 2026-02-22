@@ -99,7 +99,7 @@ export default function AboutAcademics() {
                 Our Academic Philosophy
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                At Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College, we believe that education
+                At Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College, we believe that education
                 is the cornerstone of personal and societal development. Our academic
                 program is designed to foster intellectual curiosity, critical
                 thinking, and a lifelong love for learning. We are committed to
@@ -280,7 +280,7 @@ export default function AboutAcademics() {
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-primary-600 mb-2">
-                  15+
+                  10+
                 </div>
                 <div className="text-gray-700">Years Average Experience</div>
               </div>

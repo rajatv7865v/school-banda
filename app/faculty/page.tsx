@@ -17,29 +17,29 @@ export default function Faculty() {
     {
       name: 'Mathematics',
       faculty: [
-        { 
+        {
           id: 1,
-          name: 'Dr. Sarah Johnson', 
-          role: 'Department Head', 
-          qualification: 'Ph.D. in Mathematics', 
+          name: 'Dr. Sarah Johnson',
+          role: 'Department Head',
+          qualification: 'Ph.D. in Mathematics',
           experience: '15 years',
           email: 'sarah.johnson@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 2,
-          name: 'Prof. Michael Chen', 
-          role: 'Senior Lecturer', 
-          qualification: 'M.S. in Applied Mathematics', 
+          name: 'Prof. Michael Chen',
+          role: 'Senior Lecturer',
+          qualification: 'M.S. in Applied Mathematics',
           experience: '12 years',
           email: 'michael.chen@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 3,
-          name: 'Ms. Emily Rodriguez', 
-          role: 'Lecturer', 
-          qualification: 'M.A. in Mathematics Education', 
+          name: 'Ms. Emily Rodriguez',
+          role: 'Lecturer',
+          qualification: 'M.A. in Mathematics Education',
           experience: '8 years',
           email: 'emily.rodriguez@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format',
@@ -49,29 +49,29 @@ export default function Faculty() {
     {
       name: 'Science',
       faculty: [
-        { 
+        {
           id: 4,
-          name: 'Dr. Robert Williams', 
-          role: 'Department Head', 
-          qualification: 'Ph.D. in Physics', 
+          name: 'Dr. Robert Williams',
+          role: 'Department Head',
+          qualification: 'Ph.D. in Physics',
           experience: '18 years',
           email: 'robert.williams@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 5,
-          name: 'Dr. Lisa Anderson', 
-          role: 'Senior Lecturer', 
-          qualification: 'Ph.D. in Chemistry', 
+          name: 'Dr. Lisa Anderson',
+          role: 'Senior Lecturer',
+          qualification: 'Ph.D. in Chemistry',
           experience: '14 years',
           email: 'lisa.anderson@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 6,
-          name: 'Prof. David Kim', 
-          role: 'Lecturer', 
-          qualification: 'M.S. in Biology', 
+          name: 'Prof. David Kim',
+          role: 'Lecturer',
+          qualification: 'M.S. in Biology',
           experience: '10 years',
           email: 'david.kim@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&auto=format',
@@ -81,29 +81,29 @@ export default function Faculty() {
     {
       name: 'English & Literature',
       faculty: [
-        { 
+        {
           id: 7,
-          name: 'Dr. Jennifer Martinez', 
-          role: 'Department Head', 
-          qualification: 'Ph.D. in English Literature', 
+          name: 'Dr. Jennifer Martinez',
+          role: 'Department Head',
+          qualification: 'Ph.D. in English Literature',
           experience: '16 years',
           email: 'jennifer.martinez@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 8,
-          name: 'Prof. Christopher Brown', 
-          role: 'Senior Lecturer', 
-          qualification: 'M.A. in Creative Writing', 
+          name: 'Prof. Christopher Brown',
+          role: 'Senior Lecturer',
+          qualification: 'M.A. in Creative Writing',
           experience: '11 years',
           email: 'christopher.brown@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 9,
-          name: 'Ms. Amanda Taylor', 
-          role: 'Lecturer', 
-          qualification: 'M.A. in English', 
+          name: 'Ms. Amanda Taylor',
+          role: 'Lecturer',
+          qualification: 'M.A. in English',
           experience: '7 years',
           email: 'amanda.taylor@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&auto=format',
@@ -113,29 +113,29 @@ export default function Faculty() {
     {
       name: 'Social Studies',
       faculty: [
-        { 
+        {
           id: 10,
-          name: 'Dr. James Wilson', 
-          role: 'Department Head', 
-          qualification: 'Ph.D. in History', 
+          name: 'Dr. James Wilson',
+          role: 'Department Head',
+          qualification: 'Ph.D. in History',
           experience: '17 years',
           email: 'james.wilson@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 11,
-          name: 'Prof. Maria Garcia', 
-          role: 'Senior Lecturer', 
-          qualification: 'M.A. in Political Science', 
+          name: 'Prof. Maria Garcia',
+          role: 'Senior Lecturer',
+          qualification: 'M.A. in Political Science',
           experience: '13 years',
           email: 'maria.garcia@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&auto=format',
         },
-        { 
+        {
           id: 12,
-          name: 'Mr. Thomas Lee', 
-          role: 'Lecturer', 
-          qualification: 'M.A. in Geography', 
+          name: 'Mr. Thomas Lee',
+          role: 'Lecturer',
+          qualification: 'M.A. in Geography',
           experience: '9 years',
           email: 'thomas.lee@sgmssic.edu',
           image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&auto=format',
@@ -160,6 +160,7 @@ export default function Faculty() {
     }
   };
 
+
   const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setMessageData({
       ...messageData,
@@ -167,7 +168,8 @@ export default function Faculty() {
     });
   };
 
-  const selectedStaffMember = selectedStaff 
+
+  const selectedStaffMember = selectedStaff
     ? departments.flatMap(dept => dept.faculty).find(f => f.id === selectedStaff)
     : null;
 
@@ -179,13 +181,13 @@ export default function Faculty() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop&auto=format)",
+              "url('/images/school2.jpeg')",
           }}
         >
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80" />
-        
+
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="container mx-auto px-4 text-center text-white">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 drop-shadow-2xl">
@@ -208,7 +210,7 @@ export default function Faculty() {
             <h2 className="text-4xl font-bold mb-4 text-gray-800">Meet Our Expert Faculty</h2>
             <div className="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our faculty members are highly qualified, experienced educators who are passionate about 
+              Our faculty members are highly qualified, experienced educators who are passionate about
               teaching and dedicated to helping students achieve their full potential.
             </p>
           </div>
@@ -262,7 +264,7 @@ export default function Faculty() {
           <h2 className="text-4xl font-bold text-center mb-12">Faculty Excellence</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-5xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-colors">
-              <div className="text-5xl font-bold mb-2">200+</div>
+              <div className="text-5xl font-bold mb-2">60+</div>
               <div className="text-primary-100">Faculty Members</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-colors">
@@ -270,7 +272,7 @@ export default function Faculty() {
               <div className="text-primary-100">Hold Advanced Degrees</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-colors">
-              <div className="text-5xl font-bold mb-2">15+</div>
+              <div className="text-5xl font-bold mb-2">10+</div>
               <div className="text-primary-100">Average Years Experience</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-colors">

@@ -59,7 +59,7 @@ export default function Admissions() {
               Begin Your Journey with Us
             </p>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mt-4">
-              Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College
+              Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Admissions() {
                 {
                   step: '1',
                   title: 'Application',
-                  description: 'Submit your application form along with required documents including transcripts, recommendation letters, and test scores.',
+                  description: 'Submit your application form along with required documents and Form Fee.(Rs. 100) including transcripts, recommendation letters, and test scores.',
                 },
                 {
                   step: '2',
@@ -96,7 +96,7 @@ export default function Admissions() {
                 {
                   step: '4',
                   title: 'Decision',
-                  description: 'Admission decisions are communicated within 2-3 weeks. Accepted students receive enrollment information.',
+                  description: 'Admission decisions are communicated within 2-3 days. Accepted students receive enrollment information.',
                 },
               ].map((step, index) => (
                 <div key={index} className="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md">
@@ -134,15 +134,15 @@ export default function Admissions() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span>
-                  Official transcripts
+                  2 Valid Identity Documents of Students and Parents (eg. Aadhar, PAN).
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span>
-                  Recommendation letters (2)
+                  Last Pass Year Marksheet.
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span>
-                  Standardized test scores
+                 Transfer Certificate from last institution.
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span>
@@ -150,7 +150,7 @@ export default function Admissions() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span>
-                  Health records
+                 2 Passport Size Photo
                 </li>
               </ul>
             </div>
@@ -158,16 +158,19 @@ export default function Admissions() {
               <h3 className="text-2xl font-semibold mb-4 text-primary-600">Important Dates</h3>
               <ul className="space-y-3 text-gray-700">
                 <li>
-                  <strong className="text-gray-800">Fall Semester:</strong> Applications due March 1st
+                  <strong className="text-gray-800">Admission Start:</strong> 1 May
+                </li>
+                <li> 
+                  <strong className="text-gray-800">Half Yearly Exams :</strong> November
+                </li>
+                <li> 
+                  <strong className="text-gray-800">Annually Exams :</strong> March
                 </li>
                 <li>
-                  <strong className="text-gray-800">Spring Semester:</strong> Applications due October 1st
+                  <strong className="text-gray-800">Test:</strong> August, October, December,February
                 </li>
                 <li>
-                  <strong className="text-gray-800">Early Decision:</strong> November 15th
-                </li>
-                <li>
-                  <strong className="text-gray-800">Rolling Admissions:</strong> Available for select programs
+                  <strong className="text-gray-800">Summer Camp :</strong> 1 June
                 </li>
               </ul>
             </div>
@@ -313,7 +316,7 @@ export default function Admissions() {
           <h2 className="text-4xl font-bold text-center mb-8">Financial Aid & Scholarships</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-xl mb-6 text-primary-100">
-              Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College is committed to making quality education accessible. We offer various 
+              Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College is committed to making quality education accessible. We offer various 
               financial aid options and scholarships for qualified students.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">

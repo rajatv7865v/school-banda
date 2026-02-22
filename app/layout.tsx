@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College - Premier Educational Institution",
-  description: "Shree Gayatri Mahashakti Sikhshan Sanshthan Inter College - A leading educational institution committed to academic excellence and holistic development",
+  title: "Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College - Premier Educational Institution",
+  description: "Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College - A leading educational institution committed to academic excellence and holistic development",
 };
 
 export default function RootLayout({
