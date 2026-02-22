@@ -91,26 +91,26 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Academics</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">
-                  NIOS
+                <Link href="/admissions" className="hover:text-white transition-colors">
+                  Addmission Procedure
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">
-                  Edu Life Services
+                <Link href="/academics" className="hover:text-white transition-colors">
+                Academic Information
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">
-                  IELTS
+                <Link href="/courses" className="hover:text-white transition-colors">
+                  Courses
                 </Link>
               </li>
               <li>
-                <Link href="/downloads" className="hover:text-white transition-colors">
-                  Downloads
+                <Link href="/rules-regulations" className="hover:text-white transition-colors">
+                  Rules & regulations
                 </Link>
               </li>
             </ul>
