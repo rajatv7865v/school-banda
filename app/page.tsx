@@ -51,7 +51,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Modern Laboratories</h3>
               <p className="text-gray-600 mb-4">
-                Well-equipped laboratories with all instruments as per CBSE norms. All setups are always 
+                Well-equipped laboratories with all instruments as per UP Board norms. All setups are always 
                 in working order to ease the experimental practice of students.
               </p>
               <Link href="/academics" className="text-primary-600 font-semibold hover:text-primary-700">

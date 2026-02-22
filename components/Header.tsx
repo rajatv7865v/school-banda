@@ -112,6 +112,21 @@ export default function Header() {
                 </svg>
                 <span>Gayatri Nagar, Near Power House Banda, Shahjahanpur, Uttar Pradesh</span>
               </a>
+              <a 
+                href="https://youtube.com/@sgmssic?si=QeEqY3sg1FDJVPiO" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center hover:bg-primary-700 transition-colors"
+                aria-label="Youtube Maps"
+              >
+               <svg
+  className="w-5 h-5"
+  fill="currentColor"
+  viewBox="0 0 24 24"
+>
+  <path d="M23.498 6.186a2.997 2.997 0 00-2.112-2.12C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.386.566A2.997 2.997 0 00.502 6.186 31.36 31.36 0 000 12a31.36 31.36 0 00.502 5.814 2.997 2.997 0 002.112 2.12C4.44 20.5 12 20.5 12 20.5s7.56 0 9.386-.566a2.997 2.997 0 002.112-2.12A31.36 31.36 0 0024 12a31.36 31.36 0 00-.502-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+</svg>
+              </a>
             </div>
             <div className="flex items-center gap-3">
               <a

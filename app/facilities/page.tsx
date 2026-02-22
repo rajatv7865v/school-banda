@@ -5,7 +5,7 @@ export default function Facilities() {
   const facilities = [
     {
       title: 'Modern Laboratories',
-      description: 'Well-equipped science laboratories (Physics, Chemistry, Biology) with all instruments as per CBSE norms. All setups are always in working order to ease the experimental practice of students.',
+      description: 'Well-equipped science laboratories (Physics, Chemistry, Biology) with all instruments as per UP Board norms. All setups are always in working order to ease the experimental practice of students.',
       icon: '🔬',
       image: 'https://images.unsplash.com/photo-1602052577122-f73b9710adba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFifGVufDB8fDB8fHww',
       features: ['Physics Lab', 'Chemistry Lab', 'Biology Lab', 'Computer Lab'],
