@@ -101,6 +101,16 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-white transition-colors">
+                  Terms and Conditions
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -166,7 +176,16 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College. All rights reserved.</p>
+          <p className="px-2">&copy; {currentYear} Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College. All rights reserved.</p>
+          <div className="mt-4 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-x-4 sm:gap-y-0">
+            <Link href="/privacy-policy" className="min-h-[44px] min-w-[44px] inline-flex items-center justify-center py-2 px-3 hover:text-white transition-colors touch-manipulation">
+              Privacy Policy
+            </Link>
+            <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/terms" className="min-h-[44px] min-w-[44px] inline-flex items-center justify-center py-2 px-3 hover:text-white transition-colors touch-manipulation">
+              Terms and Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

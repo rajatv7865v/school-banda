@@ -32,13 +32,18 @@ export default function BottomNav() {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     )},
+    { href: '/more', label: 'More', icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+      </svg>
+    )},
   ];
 
   return (
     <nav className="bg-white border-t border-gray-200 shadow-lg fixed bottom-0 left-0 right-0 z-40 lg:hidden">
       <div className="flex items-center justify-around px-2 py-2">
         {navLinks.map((link) => {
-          const isActive = pathname === link.href;
+          const isActive = pathname === link.href || (link.href === '/more' && ['/privacy-policy', '/terms'].includes(pathname));
           return (
             <Link
               key={link.href}
