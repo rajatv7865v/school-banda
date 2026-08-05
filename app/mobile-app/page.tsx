@@ -7,9 +7,11 @@ import AppDownloadQR, { APK_URL } from "@/components/AppDownloadQR";
 export default function MobileAppPage() {
   const [copied, setCopied] = useState(false);
   const [pageUrl, setPageUrl] = useState("/mobile-app");
+  const [apkFullUrl, setApkFullUrl] = useState(APK_URL);
 
   useEffect(() => {
     setPageUrl(`${window.location.origin}/mobile-app`);
+    setApkFullUrl(`${window.location.origin}${APK_URL}`);
   }, []);
 
   const features = [
@@ -62,9 +64,9 @@ export default function MobileAppPage() {
         "Open /mobile-app on your phone, or scan the QR code from another device.",
     },
     {
-      title: "Open Google Drive & download",
+      title: "Download the APK",
       detail:
-        "Tap “Download from Google Drive”. On Drive, tap the Download icon to save the APK to your phone.",
+        "Tap “Download SGMSSIC-app.apk” or scan the QR code. The file will save to your Downloads folder.",
     },
     {
       title: "Allow installation",
@@ -74,7 +76,7 @@ export default function MobileAppPage() {
     {
       title: "Install & open the app",
       detail:
-        "Open the downloaded APK, tap Install, then Open. Use the app for attendance and fee management.",
+        "Open SGMSSIC-app.apk, tap Install, then Open. Use the app for attendance and fee management.",
     },
   ];
 
@@ -101,12 +103,12 @@ Please download the official SGMSSIC mobile app for Attendance and Fee Managemen
 Open this page:
 ${pageUrl}
 
-Or download from Google Drive:
-${APK_URL}
+Or download the file:
+${apkFullUrl}
 
 Steps:
-1) Open Google Drive link
-2) Tap Download
+1) Open the link
+2) Download the APK
 3) Allow install if asked
 4) Open the app
 
@@ -127,14 +129,13 @@ Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College`;
               Mobile App for Attendance &amp; Fee Management
             </h1>
             <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-8">
-              Download the school app from Google Drive, scan the QR code, and follow the steps below.
+              Download the school app, scan the QR code, and follow the steps below.
               Share this page with students, parents, and staff.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <a
                 href={APK_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="SGMSSIC-app.apk"
                 className="inline-flex items-center justify-center gap-2 bg-white text-primary-800 hover:bg-primary-50 font-semibold px-6 py-3.5 rounded-lg transition-colors w-full sm:w-auto"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -145,7 +146,7 @@ Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College`;
                     d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                   />
                 </svg>
-                Download from Google Drive
+                Download SGMSSIC-app.apk
               </a>
               <button
                 type="button"
@@ -156,7 +157,7 @@ Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College`;
               </button>
             </div>
             <p className="text-sm text-primary-200 mt-4">
-              Hosted on Google Drive · Android phones only
+              File: SGMSSIC-app.apk · Android phones only
             </p>
           </div>
         </div>
@@ -172,8 +173,8 @@ Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College`;
               </h2>
               <div className="w-20 h-1 bg-primary-600 mb-4" />
               <p className="text-gray-600 mb-4">
-                Point your Android phone camera at this QR code. It opens the Google Drive
-                link — tap <strong>Download</strong> to get the APK.
+                Point your Android phone camera at this QR code. Open the link and
+                download <strong>SGMSSIC-app.apk</strong>.
               </p>
               <ul className="text-sm text-gray-600 space-y-2 mb-6">
                 <li>• Works best when this website is opened on another device (laptop / another phone)</li>
@@ -181,11 +182,10 @@ Shri Gayatri Mahashakti Sikhshan Sanshthan Inter College`;
               </ul>
               <a
                 href={APK_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="SGMSSIC-app.apk"
                 className="inline-flex items-center gap-2 text-primary-700 font-semibold hover:underline"
               >
-                Open Google Drive link →
+                Direct download link →
               </a>
             </div>
             <div className="order-1 md:order-2 flex justify-center">

@@ -189,11 +189,10 @@ export default function Footer() {
             <AppDownloadQR size={120} />
             <a
               href={APK_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="SGMSSIC-app.apk"
               className="mt-3 inline-flex items-center gap-2 text-sm text-primary-300 hover:text-white transition-colors underline underline-offset-2"
             >
-              Download from Google Drive
+              Download SGMSSIC-app.apk
             </a>
             <Link
               href="/mobile-app"

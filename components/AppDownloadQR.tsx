@@ -2,9 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-/** Google Drive link (APK is too large to host on the site) */
-export const APK_URL =
-  "https://drive.google.com/file/d/1ej-X2VV8A-VOEPPpL2QLoUCsJh2bog_p/view";
+export const APK_URL = "/SGMSSIC-app.apk";
 
 type AppDownloadQRProps = {
   size?: number;
@@ -13,6 +11,9 @@ type AppDownloadQRProps = {
 };
 
 export function getApkUrl() {
+  if (typeof window !== "undefined") {
+    return `${window.location.origin}${APK_URL}`;
+  }
   return APK_URL;
 }
 
@@ -21,14 +22,14 @@ export default function AppDownloadQR({
   className = "",
   showLabel = true,
 }: AppDownloadQRProps) {
-  const [ready, setReady] = useState(false);
+  const [apkUrl, setApkUrl] = useState<string | null>(null);
 
   useEffect(() => {
-    setReady(true);
+    setApkUrl(getApkUrl());
   }, []);
 
-  const qrSrc = ready
-    ? `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(APK_URL)}`
+  const qrSrc = apkUrl
+    ? `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(apkUrl)}`
     : null;
 
   return (
@@ -41,7 +42,7 @@ export default function AppDownloadQR({
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={qrSrc}
-            alt="QR code to download SGMSSIC mobile app from Google Drive"
+            alt="QR code to download SGMSSIC mobile app"
             width={size}
             height={size}
             className="block"

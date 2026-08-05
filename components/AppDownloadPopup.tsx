@@ -45,10 +45,10 @@ export default function AppDownloadPopup() {
   if (!isOpen) return null;
 
   const steps = [
-    "Scan the QR code or tap Download APK to open Google Drive.",
-    "Tap Download on Google Drive to save the APK.",
+    "Scan the QR code with your phone camera, or tap Download APK below.",
+    "Open the downloaded SGMSSIC-app.apk file.",
     "Allow install from unknown sources if Android asks.",
-    "Open the APK and install — then use attendance & fees.",
+    "Open the app to manage attendance and fees.",
   ];
 
   return (
@@ -115,8 +115,7 @@ export default function AppDownloadPopup() {
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <a
               href={APK_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="SGMSSIC-app.apk"
               className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-medium px-5 py-3 rounded-lg transition-colors text-center"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +126,7 @@ export default function AppDownloadPopup() {
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                 />
               </svg>
-              Download from Google Drive
+              Download APK
             </a>
             <Link
               href="/mobile-app"
@@ -139,7 +138,7 @@ export default function AppDownloadPopup() {
           </div>
 
           <p className="text-xs text-gray-400 mt-4 text-center sm:text-left">
-            Hosted on Google Drive · Android only
+            File: SGMSSIC-app.apk · Android only
           </p>
         </div>
       </div>
